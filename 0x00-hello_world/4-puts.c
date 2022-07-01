@@ -1,5 +1,12 @@
 #include <stdio.h>
 
+/**
+ * main - Entry point
+ *
+ * Description: 'A program that prints a string'
+ *
+ * Return: Always 0 (Success)
+ */
 
 int main(void)
 {
