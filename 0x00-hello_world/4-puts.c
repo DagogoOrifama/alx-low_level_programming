@@ -3,7 +3,7 @@
 /**
  * main - Entry point
  *
- * Description: 'A program that prints a string'
+ * Description: 'A program that prints a string put'
  *
  * Return: Always 0 (Success)
  */
