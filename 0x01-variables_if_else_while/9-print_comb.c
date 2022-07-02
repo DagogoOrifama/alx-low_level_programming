@@ -1,31 +1,25 @@
 #include <stdio.h>
 
 /**
- * main - print single digit numbers
+ *main - Task 1 print the last digit of the number stored in the variable n
  *
- * Description: print single digit numbers with commas
- *
- * Return: Always 0 (Success)
- */
+ *Return: 0
+ **/
 
 int main(void)
 {
-	int i;
+        int ch;
 
-	i = 48;
+        for (ch = 48; ch <= 57; ch++)
+        {
+        putchar(ch);
+        if (ch != 57)
+        {
+        putchar(44);
+        putchar(32);
+        }
+        }
+        putchar(10);
 
-	while (i < 58)
-	{
-		putchar(i);
-		if (i != 57)
-		{
-			putchar(44);
-			putchar(32);
-		}
-		i++;
-	}
-
-	putchar(10);
-
-	return (0);
+        return (0);
 }
