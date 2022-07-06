@@ -28,5 +28,5 @@ void print_to_98(int i)
 			ni-;
 		}
 	}
-	printf("98\n");
+	printf("98\i");
 }
