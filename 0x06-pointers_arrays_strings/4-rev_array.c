@@ -1,3 +1,4 @@
+
 #include "main.h"
 
 /**
@@ -7,18 +8,16 @@
 */
 void reverse_array(int *a, int n)
 {
-	int *p, i, aux, arr;
+	int *p, i, aux, k;
 
 	p = a;
-	int aux[n];
-
-	for (int i = 0; i < n; i++) 
+	for (i = 0; i < n; i++)
+		p++;
+	for (k = 0; k < i / 2; k++)
 	{
-		aux[n - 1 - i] = arr[i];
-	}
-
-	for (int i = 0; i < n; i++) 
-	{
-		arr[i] = aux[i];
+		aux = a[k];
+		a[k] = *p;
+		*p = aux;
+		p--;
 	}
 }
