@@ -6,6 +6,7 @@
 * @height: height of an array
 * Return: a pointer to a allocated grid
 */
+
 int **alloc_grid(int width, int height)
 {
 	int i, j, k, l;
