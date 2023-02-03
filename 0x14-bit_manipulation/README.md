@@ -1,39 +1,22 @@
-# 0x13. C - More singly linked lists
+# 0x14. C - Bit manipulation
 
-- lists.h: lists.h file contains prototypes to the functions.
+- C - Bit manipulation 📁 Tests ✔️ tests: Folder of test files Header File main.h: The Prototypes The table below illustrates files and it's corresponing prototype.  File Prototype 0-binary_to_uint.c unsigned int binary_to_uint(const char *b); 1-print_binary.c void print_binary(unsigned long int n); 2-get_bit.c int get_bit(unsigned long int n, unsigned int index); 3-set_bit.c int set_bit(unsigned long int *n, unsigned int index); 4-clear_bit.c int clear_bit(unsigned long int *n, unsigned int index); 5-flip_bits.c unsigned int flip_bits(unsigned long int n, unsigned long int m); 100-get_endianness.c int get_endianness(void); Tasks 📃 0. 0
 
-- File Prototype struct listint_s int n struct listint_s *next typedef listint_t struct listint_s 0-print_listint.c size_t print_listint(const listint_t *h); 1-     --listint_len.c size_t listint_len(const listint_t *h); 2-add_nodeint.c listint_t *add_nodeint(listint_t **head, const int n); 3-add_nodeint_end.c listint_t  ------*add_nodeint_end(listint_t **head, const int n); 4-free_listint.c void free_listint(listint_t *head); 5-free_listint2.c void free_listint2(listint_t **head); 6- --pop_listint.c int pop_listint(listint_t **head); 7-get_nodeint.c listint_t *get_nodeint_at_index(listint_t *head, unsigned int index); 8-sum_listint.c int sum_listint(listint_t *head); 9-insert_nodeint.c listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n); 10-delete_nodeint.c int delete_nodeint_at_index(listint_t **head, unsigned int index); 100-reverse_listint.c listint_t *reverse_listint(listint_t **head); 101-print_listint_safe.c size_t print_listint_safe(const listint_t *head); 102-free_listint_safe.c size_t free_listint_safe(listint_t **h); 103-find_loop.c listint_t *find_listint_loop(listint_t *head); Tasks 📃 0. Print list
+- 0-binary_to_uint.c: C function that converts a binary number to an unsigned int. The parameter b is a pointer to a string of 0 and 1 characters. If b is NULL or there  are one or more characters in b that are not 0 or 1 - returns 0. Otherwise - returns the converted number.
 
-- 0-print_listint.c: C function that prints all the elements of a listint_t linked list. Returns the number of nodes in the listint_t list.
+- 1-print_binary.c: C function that prints the binary representation of a number. 2. 10
 
+- 2-get_bit.c: C function that returns the value of a bit at a given index. Indices start at 0. If an error occurs - returns -1. Otherwise - returns the value of the bit at the given index. 3. 11
 
-- 1-listint_len.c: C function that returns the number of elements in a listint_t linked list. 2. Add node
+- 3-set_bit.c: C function that sets the value of a bit at a given index to 1. If an error occurs - returns -1. Otherwise - returns 1. 4. 100
 
-- 2-add_nodeint.c: C function that adds a new node at the beginning of a listint_t linked list. If the function fails - returns NULL. Otherwise - returns the address  of the new element. 3. Add node at the end
+- 4-clear_bit.c: C function that sets the value of a bit at a given index to 0. If an error occurs - returns -1. Otherwise - returns 1. 5. 101
 
-- 3-add_nodeint_end.c: C function that adds a new node at the end of a listint_t linked list. If the function fails - returns NULL. Otherwise - returns the address of the new element. 4. Free list
+- 5-flip_bits.c: C function that returns the number of bits needed to be flipped to get from one number to another. 6. Endianness
 
-- 4-free_listint.c: C function that frees a listint_t linked list. 5. Free
+- 100-get_endianness.c: C function that checks the endianness. If big-endian - returns 0. If little-endian - returns 1. 7. Crackme3
 
-- 5-free_listint2.c: C function that frees a listint_t linked list. Sets the head to NULL. 6. Pop
-
-- 6-pop_listint.c: C function that deletes the head node of a listint_t linked list. If the linked list is empty - returns 0. Otherwise - returns the head node's data (n). 7. Get node at index
-
-- 7-get_nodeint.c: C function that locates a given node of a listint_t linked list. If the node does not exist - returns NULL. Otherwise - returns the located node. 8. Sum list
-
-- 8-sum_listint.c: C function that returns the sum of all the data (n) of a listint_t linked list. If the linked list is empty - returns 0. Otherwise - returns the sum of all the data (n). 9. Insert
-
-- 9-insert_nodeint.c: C function that inserts a new node to a listint_t linked list at a given position. If it is not possible to add the new node at index idx, or the function fails - returns NULL. Otherwise - returns the address of the new node. 10. Delete at index
-
-- 10-delete_nodeint.c: C function that deletes the node at a given index of a listint_t linked list. If the function succeeds - returns 1. If the function fails - returns -1. 11. Reverse list
-
-- 100-reverse_listint.c: C function that reverses a listint_t linked list using a maximum of one loop and two variables. Returns a pointer to the first node of the reversed list. 12. Print (safe version)
-
-- 101-print_listint_safe.c: C function that prints a listint_t linked list safely (ie. can free lists containing loops). Returns the number of nodes in the listint_t list. 13. Free (safe version)
-
-- 102-free_listint_safe.c: C function that frees a listint_t linked list safely (ie. can free lists containing loops). Returns the size of the list that was freed. Sets the head to NULL. 14. Find the loop
-
-- 103-find_loop.c: C function that finds the loop contained in a listint_t linked list using a maximum of two variables. If no loop is found - returns NULL. Otherwise - returns the address of the node where the loop starts.
+- 101-password: File containing the password for the crackme3 executable.
 
 ### Authors
 [Dagogo Orifama](https://github.com/dagoris2010)
